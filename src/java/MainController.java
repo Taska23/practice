@@ -18,19 +18,19 @@ public class MainController {
     private VBox mainWindow;
 
     @FXML
-    private ListView<Match> lstContacts;
+    private ListView<Match> lstMatches;
     private ObservableList<Match> matches;
 
     @FXML
     private void initialize(){
         matches = FXCollections.observableArrayList(MatchModel.getMatches());
-        lstContacts.setItems(matches);
+        lstMatches.setItems(matches);
     }
 
     @FXML
     private void addContactDialog() throws IOException {
         Stage dlgNewContact = new Stage();
-        dlgNewContact.setTitle("Добавление контакта");
+        dlgNewContact.setTitle("Добавление Матча");
         dlgNewContact.setResizable(false);
         GridPane dlgView = FXMLLoader.load(
                 getClass().getResource("/modal/dialog.fxml")
@@ -40,7 +40,7 @@ public class MainController {
         dlgNewContact.initModality(Modality.WINDOW_MODAL);
         dlgNewContact.setOnCloseRequest(event -> {
             matches.setAll(MatchModel.getMatches());
-            lstContacts.refresh();
+            lstMatches.refresh();
         });
         dlgNewContact.showAndWait();
     }

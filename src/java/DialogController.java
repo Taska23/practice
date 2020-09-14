@@ -10,26 +10,26 @@ public class DialogController {
     private GridPane dialog;
 
     @FXML
-    private TextField fldName;
+    private TextField fldft;
     @FXML
-    private TextField fldSurname;
+    private TextField fldst;
     @FXML
-    private TextField fldPhone;
+    private TextField fldsc;
     @FXML
-    private TextField fldEmail;
+    private TextField flddt;
 
     @FXML
     private void saveOnClick(){
         MatchModel.save(new Match(
-                fldName.getText(),
-                fldSurname.getText(),
-                fldPhone.getText(),
-                fldEmail.getText()
+                fldft.getText(),
+                fldst.getText(),
+                fldsc.getText(),
+                flddt.getText()
         ));
-        fldName.clear();
-        fldSurname.clear();
-        fldEmail.clear();
-        fldPhone.clear();
+        fldft.clear();
+        fldst.clear();
+        flddt.clear();
+        fldsc.clear();
     }
 
     @FXML

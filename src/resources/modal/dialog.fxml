@@ -20,14 +20,14 @@
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Label text="Имя" />
-      <Label text="Фамилия" GridPane.rowIndex="1" />
-      <Label text="Номер телефона" GridPane.rowIndex="2" />
-      <Label text="Email" GridPane.rowIndex="3" />
-      <TextField fx:id="fldName" GridPane.columnIndex="1" />
-      <TextField fx:id="fldSurname" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <TextField fx:id="fldPhone" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-      <TextField fx:id="fldEmail" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label text="Первая команда" />
+      <Label text="Вторая команда" GridPane.rowIndex="1" />
+      <Label text="Счёт" GridPane.rowIndex="2" />
+      <Label text="Дата" GridPane.rowIndex="3" />
+      <TextField fx:id="fldft" GridPane.columnIndex="1" />
+      <TextField fx:id="fldst" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="fldsc" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="flddt" GridPane.columnIndex="1" GridPane.rowIndex="3" />
       <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#saveOnClick" text="Сохранить" GridPane.rowIndex="4" />
       <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#cancelOnClick" text="Охрана, отмена" GridPane.columnIndex="1" GridPane.rowIndex="4" />
    </children>

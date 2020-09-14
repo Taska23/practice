@@ -1,4 +1,6 @@
-public class Match {
+import java.io.Serializable;
+
+public class Match implements Serializable {
     private String firstTeam;
     private String secondTeam;
     private String score;
